@@ -1,0 +1,10 @@
+# Программа для пересчёта величины временного интервала, заданного в минутах, в величину, выраженную в часах и минутах.
+min = 50
+hours = int(min / 60)
+minutes = min - 60 * int(min / 60)
+if hours < 10 and minutes != 0:
+    print('0' + str(hours) + ':' + str(minutes))
+elif hours < 10 and minutes == 0:
+    print('0' + str(hours) + ':' + str(minutes) + '0')
+else:
+    print(str(hours) + ':' + str(minutes))
