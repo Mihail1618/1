@@ -1,0 +1,15 @@
+def calc_cube_area(side):
+    one_face = side * side
+    s = one_face * 6
+    return s
+    
+def calc_cube_perimeter(side):
+    return side * 12
+
+def calc_cube(side):
+    one_cube_area = calc_cube_area(side)
+    full_area = one_cube_area * 8
+    one_cube_perimeter = calc_cube_perimeter(side)
+    full_perimeter = one_cube_perimeter * 8
+    print('Общая площадь: ', full_area, ' Общий периметр: ', full_perimeter)
+calc_cube(3)
